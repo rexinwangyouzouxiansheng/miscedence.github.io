@@ -4,6 +4,44 @@
   
     
     <entry>
+      <title>hexo更换butterfly主题踩坑</title>
+      <link href="/2022/07/13/hexo%E6%9B%B4%E6%8D%A2%E4%B8%BB%E9%A2%98%E8%B8%A9%E5%9D%91/"/>
+      <url>/2022/07/13/hexo%E6%9B%B4%E6%8D%A2%E4%B8%BB%E9%A2%98%E8%B8%A9%E5%9D%91/</url>
+      
+        <content type="html"><![CDATA[<p>具体可看：<a href="https://www.bilibili.com/read/cv12633102">2021最全hexo搭建博客+matery美化+使用（保姆级教程） - 哔哩哔哩 (bilibili.com)</a></p><h4 id="1、安装依赖包一定要换淘宝源"><a href="#1、安装依赖包一定要换淘宝源" class="headerlink" title="1、安装依赖包一定要换淘宝源"></a>1、安装依赖包一定要换淘宝源</h4><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">npm install -g cnpm --registry==https://registry.npm.taobao.org </span><br></pre></td></tr></table></figure><h4 id="2、安装butterfly主题出现问题"><a href="#2、安装butterfly主题出现问题" class="headerlink" title="2、安装butterfly主题出现问题"></a>2、安装butterfly主题出现问题</h4><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">extends includes/layout.pug block content include ./includes/mixins/post-ui.pug #recent-posts.recent-posts +postUI include includes/pagination.pug</span><br></pre></td></tr></table></figure><p>解决方案：</p><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">npm install hexo-renderer-pug hexo-renderer-stylus --save</span><br></pre></td></tr></table></figure><p>丝滑~</p><h4 id="3、一定不要开跟评论有关的东西"><a href="#3、一定不要开跟评论有关的东西" class="headerlink" title="3、一定不要开跟评论有关的东西"></a>3、一定不要开跟评论有关的东西</h4><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">Unhandled rejection TypeError: E:\Learning-Related\Blog\themes\butterfly\layout\includes\widget\inde</span><br></pre></td></tr></table></figure><p>解决方案：</p><p>把之前开的跟评论有关的东西给关掉</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> hexo </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> blog </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>temp</title>
+      <link href="/2022/07/13/temp/"/>
+      <url>/2022/07/13/temp/</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>hexo与typora同步图片插入格式</title>
       <link href="/2022/07/13/hexo%E4%B8%8Etypora%E5%90%8C%E6%AD%A5%E5%9B%BE%E7%89%87%E6%8F%92%E5%85%A5%E6%A0%BC%E5%BC%8F/"/>
       <url>/2022/07/13/hexo%E4%B8%8Etypora%E5%90%8C%E6%AD%A5%E5%9B%BE%E7%89%87%E6%8F%92%E5%85%A5%E6%A0%BC%E5%BC%8F/</url>
@@ -29,11 +67,11 @@
     
     
     <entry>
-      <title>hexo更换butterfly主题踩坑</title>
-      <link href="/2022/07/13/hexo%E6%9B%B4%E6%8D%A2%E4%B8%BB%E9%A2%98%E8%B8%A9%E5%9D%91/"/>
-      <url>/2022/07/13/hexo%E6%9B%B4%E6%8D%A2%E4%B8%BB%E9%A2%98%E8%B8%A9%E5%9D%91/</url>
+      <title>重新创建hexo博客</title>
+      <link href="/2022/07/13/%E9%87%8D%E6%96%B0%E5%88%9B%E5%BB%BA%E5%8D%9A%E5%AE%A2/"/>
+      <url>/2022/07/13/%E9%87%8D%E6%96%B0%E5%88%9B%E5%BB%BA%E5%8D%9A%E5%AE%A2/</url>
       
-        <content type="html"><![CDATA[<p>具体可看：<a href="https://www.bilibili.com/read/cv12633102">2021最全hexo搭建博客+matery美化+使用（保姆级教程） - 哔哩哔哩 (bilibili.com)</a></p><h4 id="1、安装依赖包一定要换淘宝源"><a href="#1、安装依赖包一定要换淘宝源" class="headerlink" title="1、安装依赖包一定要换淘宝源"></a>1、安装依赖包一定要换淘宝源</h4><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">npm install -g cnpm --registry==https://registry.npm.taobao.org </span><br></pre></td></tr></table></figure><h4 id="2、安装butterfly主题出现问题"><a href="#2、安装butterfly主题出现问题" class="headerlink" title="2、安装butterfly主题出现问题"></a>2、安装butterfly主题出现问题</h4><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">extends includes/layout.pug block content include ./includes/mixins/post-ui.pug #recent-posts.recent-posts +postUI include includes/pagination.pug</span><br></pre></td></tr></table></figure><p>解决方案：</p><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">npm install hexo-renderer-pug hexo-renderer-stylus --save</span><br></pre></td></tr></table></figure><p>丝滑~</p><h4 id="3、一定不要开跟评论有关的东西"><a href="#3、一定不要开跟评论有关的东西" class="headerlink" title="3、一定不要开跟评论有关的东西"></a>3、一定不要开跟评论有关的东西</h4><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">Unhandled rejection TypeError: E:\Learning-Related\Blog\themes\butterfly\layout\includes\widget\inde</span><br></pre></td></tr></table></figure><p>解决方案：</p><p>把之前开的跟评论有关的东西给关掉</p>]]></content>
+        <content type="html"><![CDATA[<ol><li><p>手动安装Nodejs</p></li><li><p>查看node版本</p><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">node -v</span><br></pre></td></tr></table></figure><p>查看npm版本</p><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">npm -v</span><br></pre></td></tr></table></figure></li><li><p>安装淘宝的cnpm 管理器</p><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">npm install -g cnpm --registry=http://registry.npm.taobao.org</span><br></pre></td></tr></table></figure><p>查看cnpm版本</p><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">cnpm -v</span><br></pre></td></tr></table></figure></li><li><p>安装hexo框架</p><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">cnpm install -g hexo-cli   </span><br></pre></td></tr></table></figure></li><li><p>查看hexo版本</p><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">hexo -v</span><br></pre></td></tr></table></figure></li><li><p>创建blog目录</p><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">mkdir blog</span><br></pre></td></tr></table></figure></li><li><p>cd blog     #进入blog目录</p></li><li><p>hexo init     #生成博客 初始化博客</p></li><li><p>hexo s    #启动本地博客服务<br><a href="http://localhost:4000/">http://localhost:4000/</a>    #本地访问地址</p></li><li><p>hexo n “我的第一篇文章” #创建新的文章<br>#返回blog目录</p></li><li><p>hexo clean #清理</p></li><li><p>hexo g #生成</p></li><li><p>#Github创建一个新的仓库 YourGithubName.github.io<br>cnpm install —save hexo-deployer-git #在blog目录下安装git部署插件<br>-—-</p></li><li><p>配置_config.yml </p><p>deploy:</p><pre><code>type: gitrepo: https://github.com/YourGithubName/YourGithubName.github.io.gitbranch: master</code></pre><p>hexo d    #部署到Github仓库里<br><a href="https://YourGithubName.github.io/">https://YourGithubName.github.io/</a>  #访问这个地址可以查看博客</p></li><li><p>git clone <a href="https://github.com/litten/hexo-theme-yilia.git">https://github.com/litten/hexo-theme-yilia.git</a> themes/yilia  #下载yilia主题到本地</p><p>#修改hexo根目录下的 _config.yml 文件 ： theme: yilia</p></li><li><p>hexo c    #清理一下<br>hexo g    #生成<br>hexo d    #部署到远程Github仓库<br><a href="https://YourGithubName.github.io/">https://YourGithubName.github.io/</a>  #查看博客</p></li></ol>]]></content>
       
       
       <categories>
@@ -65,44 +103,6 @@
         <tags>
             
             <tag> hexo </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>temp</title>
-      <link href="/2022/07/13/temp/"/>
-      <url>/2022/07/13/temp/</url>
-      
-        <content type="html"><![CDATA[]]></content>
-      
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>重新创建hexo博客</title>
-      <link href="/2022/07/13/%E9%87%8D%E6%96%B0%E5%88%9B%E5%BB%BA%E5%8D%9A%E5%AE%A2/"/>
-      <url>/2022/07/13/%E9%87%8D%E6%96%B0%E5%88%9B%E5%BB%BA%E5%8D%9A%E5%AE%A2/</url>
-      
-        <content type="html"><![CDATA[<ol><li><p>手动安装Nodejs</p></li><li><p>查看node版本</p><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">node -v</span><br></pre></td></tr></table></figure><p>查看npm版本</p><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">npm -v</span><br></pre></td></tr></table></figure></li><li><p>安装淘宝的cnpm 管理器</p><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">npm install -g cnpm --registry=http://registry.npm.taobao.org</span><br></pre></td></tr></table></figure><p>查看cnpm版本</p><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">cnpm -v</span><br></pre></td></tr></table></figure></li><li><p>安装hexo框架</p><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">cnpm install -g hexo-cli   </span><br></pre></td></tr></table></figure></li><li><p>查看hexo版本</p><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">hexo -v</span><br></pre></td></tr></table></figure></li><li><p>创建blog目录</p><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">mkdir blog</span><br></pre></td></tr></table></figure></li><li><p>cd blog     #进入blog目录</p></li><li><p>hexo init     #生成博客 初始化博客</p></li><li><p>hexo s    #启动本地博客服务<br><a href="http://localhost:4000/">http://localhost:4000/</a>    #本地访问地址</p></li><li><p>hexo n “我的第一篇文章” #创建新的文章<br>#返回blog目录</p></li><li><p>hexo clean #清理</p></li><li><p>hexo g #生成</p></li><li><p>#Github创建一个新的仓库 YourGithubName.github.io<br>cnpm install —save hexo-deployer-git #在blog目录下安装git部署插件<br>-—-</p></li><li><p>配置_config.yml </p><p>deploy:</p><pre><code>type: gitrepo: https://github.com/YourGithubName/YourGithubName.github.io.gitbranch: master</code></pre><p>hexo d    #部署到Github仓库里<br><a href="https://YourGithubName.github.io/">https://YourGithubName.github.io/</a>  #访问这个地址可以查看博客</p></li><li><p>git clone <a href="https://github.com/litten/hexo-theme-yilia.git">https://github.com/litten/hexo-theme-yilia.git</a> themes/yilia  #下载yilia主题到本地</p><p>#修改hexo根目录下的 _config.yml 文件 ： theme: yilia</p></li><li><p>hexo c    #清理一下<br>hexo g    #生成<br>hexo d    #部署到远程Github仓库<br><a href="https://YourGithubName.github.io/">https://YourGithubName.github.io/</a>  #查看博客</p></li></ol>]]></content>
-      
-      
-      <categories>
-          
-          <category> hexo </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> blog </tag>
             
         </tags>
       
